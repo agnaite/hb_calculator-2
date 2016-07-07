@@ -22,5 +22,7 @@ while input_string != "q":
         print divide(int(tokens[1]), int(tokens[2]))
     elif tokens[0] == "square":
         print square(int(tokens[1]))
+    elif tokens[0] == "cube":
+        print cube(int(tokens[1]))
 
 # Your code goes here
