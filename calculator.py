@@ -18,5 +18,8 @@ while input_string != "q":
         print subtract(int(tokens[1]),int(tokens[2]))
     elif tokens[0] == "*":
         print multiply(int(tokens[1]), int(tokens[2]))
+    elif tokens[0] == "/": 
+        print divide(int(tokens[1]), int(tokens[2]))
+
 
 # Your code goes here
