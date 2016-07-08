@@ -44,9 +44,15 @@ while input_string != "q":
         elif tokens[0] == "cube":
             print cube(valid_input)
         elif tokens[0] == "pow":
-            print power(valid_input)
+            if len(valid_input) != 2:
+                print "Function requires two values."
+            else:
+                print power(valid_input)
         elif tokens[0] == "mod":
-            print mod(valid_input)
+            if len(valid_input) != 2:
+                print "Function requires two values."
+            else:
+                print mod(valid_input)
         else:
             print "Not a valid argument."
 
