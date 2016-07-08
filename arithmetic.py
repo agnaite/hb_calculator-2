@@ -1,35 +1,39 @@
-def add(num1, num2):
-    return num1 + num2
+def add(numlist):
+    sum = 0
+    for x in numlist:
+        sum = sum + x
+    return sum
 
+def subtract(numlist):
+    difference = numlist.pop(0)
+    for x in numlist:
+        difference = difference - x
+    return difference
 
-def subtract(num1, num2):
-    return num1 - num2
+def multiply(numlist):
+    product = 1
+    for x in numlist:
+        product *= x
+    return product
 
+def divide(numlist):
+    product = numlist.pop(0)
+    for x in numlist:
+        product /= float(x)
+    return product
 
-def multiply(num1, num2):
-    return num1 * num2
-
-
-def divide(num1, num2):
-    # Need to turn at least argument to float for division to
-    # not be integer division
-    return float(num1) / float(num2) 
-
-
-def square(num1):
+def square(numlist):
     # Needs only one argument
-    return num1 * num1
+    return numlist[0] * numlist[0]
 
-
-def cube(num1):
+def cube(numlist):
     # Needs only one argument
-    return num1 * num1 * num1
+    return numlist[0] * numlist[0] * numlist[0]
+
+def power(numlist):
+    return numlist[0] ** numlist[1]  # ** = exponent operator
 
 
-def power(num1, num2):
-    return num1 ** num2  # ** = exponent operator
-
-
-def mod(num1, num2):
-    return num1 % num2
+def mod(numlist):
+    return numlist[0] % numlist[1]
 
